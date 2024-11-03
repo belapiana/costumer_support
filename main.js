@@ -13,8 +13,9 @@ async function fetchTickets() { // Use async function
         }
         return tickets; // Return array
     } catch (error) {
-        displayError(error.message); // Custom error handling
-    }
+        displayError(error.message); } // Error handling
+        finally { // Task 4: Use finally to hide any loading indicators (if present)
+    } 
 }
 
 function displayError(message) {
